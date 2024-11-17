@@ -1,0 +1,22 @@
+# Message Transport Configuration
+
+
+- **Option 1**: Use RabbitMQ as the message broker.
+- **Option 2**: Use SQL Server for message transport.
+
+---
+
+## Option 1: Use RabbitMQ
+
+RabbitMQ is a lightweight, cross-platform message broker. Follow the steps below to set it up using Docker.
+
+### Step 1: Install RabbitMQ with Docker
+
+Run the following command to start RabbitMQ with the management console enabled:
+
+```bash
+docker run -d --name rabbitmq-management -p 5672:5672 -p 15672:15672 rabbitmq:3-management
+
+
+## Option 2: Use SqlServer
+### Create the tables,stored procedures,... using the script createMasstransitTransportSqlServer.sql 
